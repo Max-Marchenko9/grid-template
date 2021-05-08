@@ -1,0 +1,18 @@
+.header-menu {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  left: 0;
+
+  @include md {
+    background-color: rgba(#44596e, 0.25);
+  }
+  &__container {
+    display: grid;
+    align-items: center;
+
+    @extend %container;
+    grid-template-columns: auto 1fr;
+  }
+}

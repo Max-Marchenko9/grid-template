@@ -1,0 +1,87 @@
+* {
+  box-sizing: border-box;
+}
+html {
+  overflow-y: scroll;
+
+  letter-spacing: 0.1em;
+
+  color: #637588;
+
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+}
+
+h1 {
+  letter-spacing: 0.08em;
+
+  font-family: "Roboto Slab", serif;
+  font-weight: 300;
+  line-height: 1.2em;
+  @media (min-width: 992px) {
+    font-size: 3.75rem;
+  }
+  @media (max-width: 992px - 0.2) and (min-width: 768px) {
+    font-size: 2.5rem;
+  }
+  @media (max-width: 768px - 0.2) {
+    font-size: 1.875rem;
+  }
+}
+a {
+  text-decoration: none;
+
+  color: #ffffff;
+}
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  height: 60px;
+
+  transition: background-color 0.5s;
+  letter-spacing: 0.1em;
+
+  font-size: 1.125rem;
+
+  &:hover,
+  &:focus {
+    background-color: #d66926;
+  }
+
+  &--light {
+    border: 2px solid #ffffff;
+    background-color: rgba(255, 255, 255, 0.1);
+
+    @include lg-min {
+      min-width: 250px;
+      height: 60px;
+
+      font-size: 1.125rem;
+    }
+    @include lg-md {
+      min-width: 200px;
+      height: 50px;
+
+      font-size: 1rem;
+    }
+    @include md {
+      min-width: 170px;
+      height: 40px;
+
+      font-size: 1rem;
+    }
+  }
+  &--primary {
+    border: 2px solid $color-primary;
+    background-color: rgba(45, 54, 81, 0.8);
+
+    @include sm-min {
+      width: 350px;
+    }
+    @include sm {
+      width: 100%;
+    }
+  }
+}

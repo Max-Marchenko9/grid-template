@@ -1,0 +1,14 @@
+.header {
+  position: relative;
+
+  display: grid;
+  align-content: center;
+
+  min-height: 100vh;
+  padding: 100px 0;
+
+  color: #ffffff;
+  background-color: $color-primary;
+  background-position: center;
+  background-size: cover;
+}

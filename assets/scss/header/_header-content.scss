@@ -1,0 +1,28 @@
+.header-content {
+  position: relative;
+  &__container {
+    @extend %container;
+  }
+  &__title {
+    text-align: center;
+    @media (min-width: 992px) {
+      margin: 0 0 53px 0;
+    }
+    @media (max-width: 992px - 0.2) and (min-width: 768px) {
+      margin: 0 0 43px 0;
+    }
+    @media (max-width: 768px - 0.2) {
+      margin: 0 0 33px 0;
+    }
+  }
+  &__actions {
+    display: flex;
+    justify-content: center;
+
+    gap: 20px;
+    @include sm {
+      align-items: center;
+      flex-direction: column;
+    }
+  }
+}

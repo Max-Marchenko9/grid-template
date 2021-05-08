@@ -1,0 +1,40 @@
+.skills {
+  @include sm-min {
+    margin-bottom: 30px;
+    padding: 10px;
+  }
+  @include sm {
+    padding: 20px;
+    // margin-bottom: 0px;
+  }
+  &__container {
+    display: grid;
+
+    gap: 10px;
+    @include lg-min {
+      grid-template-areas: "a1 a1 a2 a3" "a4 a5 a5 a6" "a7 a8 a9 a6";
+    }
+    @include lg-md {
+      grid-template-areas: "a1 a1 a2" "a3 a4 a4" "a5 a5 a6" "a7 a8 a6" "a7 a9 a9";
+    }
+    @include md-sm {
+      grid-template-areas: "a1 a2" "a3 a2" "a4 a4" "a5 a6" "a5 a7" "a8 a9";
+    }
+    @include sm {
+      gap: 20px;
+      grid-template-areas: "a1" "a2" "a3" "a4" "a5" "a6" "a7" "a8" "a9";
+    }
+    @media (min-height: 641px) {
+      grid-auto-rows: calc(33.3333vh - 40px /3);
+    }
+    @media (max-height: 640px) {
+      grid-auto-rows: 200px;
+    }
+  }
+  &__actions {
+    display: flex;
+    justify-content: center;
+
+    margin-top: 20px;
+  }
+}
