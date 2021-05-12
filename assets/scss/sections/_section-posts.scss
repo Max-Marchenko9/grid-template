@@ -1,6 +1,6 @@
 .posts {
   padding-top: 100px;
-  padding-bottom: 100px;
+  padding-bottom: 90px;
 
   &__container {
     @extend %container;
@@ -91,6 +91,11 @@
 .post-item:hover .post-item__image img {
     transform: scale(1.1);
   }
+.post-button {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
 
 // .post-item {
 //   transition: background-color 0.5s;
