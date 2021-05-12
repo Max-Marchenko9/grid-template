@@ -32,15 +32,15 @@
     font-size: 1rem;
   }
   @include sm {
-    margin-bottom: 50px;
+    margin-bottom: 5px;
   }
 
   &__title {
     font-family: $font-header;
     font-weight: bold;
     color: $color-primary;
-    margin-bottom: 47px;
-    margin-top: 0;
+    margin-bottom: 50px;
+    margin-top: 0px;
     letter-spacing: 0.09em;
     line-height: 1.2em;
 
@@ -57,6 +57,10 @@
         text-align: center;
       }
   }
+  &__text p:last-of-type {
+    margin-bottom: 0;
+  }
+
 }
 .about-border {
   margin-left: 45px;

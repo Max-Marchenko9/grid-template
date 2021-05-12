@@ -10,22 +10,24 @@
   &__container {
     display: grid;
 
-    gap: 10px;
     @include lg-min {
+      gap: 10px;
       grid-template-areas: "a1 a1 a2 a3" "a4 a5 a5 a6" "a7 a8 a9 a6";
     }
     @include lg-md {
+      gap: 10px;
       grid-template-areas: "a1 a1 a2" "a3 a4 a4" "a5 a5 a6" "a7 a8 a6" "a7 a9 a9";
     }
     @include md-sm {
+      gap: 10px;
       grid-template-areas: "a1 a2" "a3 a2" "a4 a4" "a5 a6" "a5 a7" "a8 a9";
     }
     @include sm {
       gap: 20px;
       grid-template-areas: "a1" "a2" "a3" "a4" "a5" "a6" "a7" "a8" "a9";
     }
-    @media (min-height: 641px) {
-      grid-auto-rows: calc(33.3333vh - 40px /3);
+    @media (min-height: 691px) {
+      grid-auto-rows: calc(33.33333vh - 20px * 0.66666);
     }
     @media (max-height: 640px) {
       grid-auto-rows: 200px;
