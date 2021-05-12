@@ -1072,6 +1072,12 @@ a {
   }
 }
 
+@media (max-width: 991.8px) {
+  .header-navbar__list {
+    margin: 0 -24px 0 0;
+  }
+}
+
 @media (max-width: 991.8px) and (min-width: 768px) {
   h1 {
     font-size: 2.5rem;
@@ -1102,7 +1108,7 @@ a {
   }
   .about-border {
     margin-left: 35px;
-    margin-right: 40px;
+    margin-right: 41px;
     margin-top: -40px;
   }
   .about-item__img {
