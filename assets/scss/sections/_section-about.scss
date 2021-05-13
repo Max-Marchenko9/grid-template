@@ -12,7 +12,7 @@
       padding: 80px 20px;
     }
     @include md-sm {
-      padding: 60px 20px;
+      padding: 60px 20px 37px 20px;
     }
     @include sm-min {
       display: flex;
@@ -40,6 +40,7 @@
   }
   @include md {
     font-size: 1rem;
+    line-height: 1.5em;
   }
   @include sm {
     margin-bottom: 5px;
@@ -65,11 +66,21 @@
     }
     @include md {
       font-size: 1.5rem;
+      line-height: 1.3;
+      margin-bottom: 26px;
+      letter-spacing: 0.1em;
     }
     @include sm {
         text-align: center;
+        margin-bottom: 25px;
       }
   } 
+  &__text {
+    @include md {
+    margin-top: -2px;
+    letter-spacing: 0.09;
+    }
+  }
   }
 
 
@@ -81,10 +92,13 @@
   @include lg-md {
     margin-left: 35px;
     margin-right: 41px;
-    margin-top: -40px;
+    margin-top: 80px;
   }
   @include md {
-    margin-right: 39px;
+    margin-right: 55px;
+    margin-top: -53px;
+    margin-left: 20px;
+
   }
   @include sm {
     margin-right: 39px;
@@ -120,8 +134,14 @@
     max-height: 459px;
     }
     @include md {
+      max-width: 236px;
+      max-height: 425px;
+      margin-top: -26px;
+      margin-right: 2px;
     }
     @include sm {
+      max-width: 271px;
+      max-height: 487px;
     }
   }
 }

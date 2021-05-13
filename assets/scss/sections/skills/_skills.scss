@@ -1,4 +1,4 @@
- .skills {
+.skills {
   @include sm-min {
     margin-bottom: 30px;
     padding: 10px;
@@ -8,6 +8,7 @@
     // margin-bottom: 0px;
   }
   &__container {
+    
     display: grid;
 
     @include lg-min {
@@ -29,7 +30,7 @@
     @media (min-height: 691px) {
       grid-auto-rows: calc(33.33333vh - 20px * 0.66666);
     }
-    @media (max-height: 640px) {
+    @media (max-height: 690px) {
       grid-auto-rows: 200px;
     }
   }

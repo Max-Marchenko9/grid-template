@@ -776,14 +776,12 @@ a {
   width: 100%;
   color: #ffffff;
   letter-spacing: 0.1em;
-  font-size: 1.125rem;
   -webkit-transition: 0.8s;
   -o-transition: 0.8s;
   transition: 0.8s;
 }
 
 .form-item__input {
-  padding-left: 31px;
   background-color: #38405a;
   border: 2px solid #38405a;
   border-bottom: 2px solid #4a5269;
@@ -847,24 +845,15 @@ a {
   border: 2px solid #ffffff;
 }
 
-.posts {
-  padding-top: 100px;
-  padding-bottom: 90px;
-}
-
 .posts__title {
   font-family: "Roboto Slab", serif;
-  font-size: 2.5rem;
   color: #2d3651;
   margin-top: 3px;
-  margin-bottom: 56px;
   letter-spacing: 0.1em;
 }
 
 .posts__grid {
   display: grid;
-  grid-template-areas: "a1 a1 a2 a3" "a4 a5 a6 a6";
-  grid-template-columns: repeat(4, 1fr);
   gap: 20px;
 }
 
@@ -1070,11 +1059,33 @@ a {
     max-width: 271px;
     max-height: 487.08px;
   }
+  .form-item__input,
+  .form-item .batton {
+    font-size: 1.125rem;
+  }
+  .form-item__input {
+    padding-left: 31px;
+  }
+  .posts {
+    padding-top: 100px;
+    padding-bottom: 90px;
+  }
+  .posts__title {
+    font-size: 2.5rem;
+    margin-bottom: 56px;
+  }
+  .posts__grid {
+    grid-template-areas: "a1 a1 a2 a3" "a4 a5 a6 a6";
+    grid-template-columns: repeat(4, 1fr);
+  }
 }
 
 @media (max-width: 991.8px) {
   .header-navbar__list {
     margin: 0 -24px 0 0;
+  }
+  .form-item__input {
+    padding-left: 20px;
   }
 }
 
@@ -1109,7 +1120,7 @@ a {
   .about-border {
     margin-left: 35px;
     margin-right: 41px;
-    margin-top: -40px;
+    margin-top: 80px;
   }
   .about-item__img {
     max-width: 255px;
@@ -1117,6 +1128,31 @@ a {
   }
   .about-article p {
     line-height: 1.3;
+  }
+  .form__container {
+    min-height: 100px;
+  }
+  .form-item__input,
+  .form-item .batton {
+    font-size: 1rem;
+  }
+  .posts {
+    padding-top: 79px;
+    padding-bottom: 80px;
+  }
+  .posts__title {
+    font-size: 2rem;
+    margin-bottom: 46px;
+  }
+  .posts__grid {
+    grid-template-areas: "a1 a1 a2" "a3 a4 a4" "a5 a5 a6";
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .post-item__content h3 {
+    margin-bottom: 11px;
+  }
+  .post-item__content p {
+    margin-top: 11px;
   }
 }
 
@@ -1157,16 +1193,44 @@ a {
   }
   .about-article {
     font-size: 1rem;
+    line-height: 1.5em;
   }
   .about-article__title {
     font-size: 1.5rem;
+    line-height: 1.3;
+    margin-bottom: 26px;
+    letter-spacing: 0.1em;
+  }
+  .about-article__text {
+    margin-top: -2px;
+    letter-spacing: 0.09;
   }
   .about-border {
-    margin-right: 39px;
+    margin-right: 55px;
+    margin-top: -53px;
+    margin-left: 20px;
+  }
+  .about-item__img {
+    max-width: 236px;
+    max-height: 425px;
+    margin-top: -26px;
+    margin-right: 2px;
   }
   .form__container {
     padding-top: 20px;
     padding-bottom: 20px;
+  }
+  .form-item__input,
+  .form-item .batton {
+    font-size: 1.125rem;
+  }
+  .posts__container {
+    padding-right: 22px;
+    padding-left: 22px;
+  }
+  .posts__title {
+    font-size: 1.5rem;
+    margin-bottom: 31px;
   }
 }
 
@@ -1176,14 +1240,25 @@ a {
     grid-template-areas: "a1 a2" "a3 a2" "a4 a4" "a5 a6" "a5 a7" "a8 a9";
   }
   .about__container {
-    padding: 60px 20px;
+    padding: 60px 20px 37px 20px;
+  }
+  .form__container {
+    height: 182px;
   }
   .form-item:nth-of-type(1) {
     grid-column: 1 / 3;
   }
+  .posts {
+    padding-top: 59px;
+    padding-bottom: 80px;
+  }
+  .posts__grid {
+    grid-template-areas: "a1 a2" "a3 a4" "a5 a6";
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
-@media (max-height: 640px) {
+@media (max-height: 690px) {
   .skills__container {
     grid-auto-rows: 200px;
   }
@@ -1217,6 +1292,7 @@ a {
   }
   .about-article__title {
     text-align: center;
+    margin-bottom: 25px;
   }
   .about-border {
     margin-right: 39px;
@@ -1232,7 +1308,15 @@ a {
         -ms-flex-pack: center;
             justify-content: center;
   }
+  .about-item__img {
+    max-width: 271px;
+    max-height: 487px;
+  }
   .form__container {
+    grid-template-columns: 1fr;
+  }
+  .posts__grid {
+    grid-template-areas: "a1" "a2" "a3" "a4" "a5" "a6";
     grid-template-columns: 1fr;
   }
 }

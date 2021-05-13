@@ -3,13 +3,23 @@
     @extend %container;
 
     min-height: 120px;
-
+    
     display: grid;
     gap: 20px;
     grid-template-columns: 1fr 1fr;
     grid-auto-rows: auto;
-
     
+    // @include lg {
+
+    // }
+    @include lg-md {
+      min-height: 100px;
+
+    }
+    @include md-sm {
+      height: 182px;
+
+    }
     @include md-min {
         align-items: center;
         justify-content: space-between;
@@ -37,15 +47,34 @@
     width: 100%;
     color: #ffffff;
     letter-spacing: 0.1em;
-    font-size: 1.125rem;
-
+    
     transition: 0.8s;
+    
+    @include lg-min {
+      font-size: 1.125rem;
+
+    }
+    @include lg-md {
+      font-size: 1rem;
+
+    }
+    @include md {
+      font-size: 1.125rem;
+
+    }
   }
   &__input {
-    padding-left: 31px;
     background-color: #38405a;
     border: 2px solid #38405a;
     border-bottom: 2px solid #4a5269;
+    
+    @include lg-min {
+      padding-left: 31px;
+    }
+    @include lg {
+      padding-left: 20px;
+    }
+
     &::placeholder {
       color: #AEA19D;
     }
