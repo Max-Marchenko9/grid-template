@@ -5,6 +5,12 @@
   }
   &__title {
     text-align: center;
+
+    @include sm {
+      margin: 0 auto 38px auto;
+
+      line-height: 1.35em;
+    }
     @media (min-width: 992px) {
       margin: 0 0 53px 0;
     }
@@ -12,13 +18,7 @@
       margin: 0 0 43px 0;
     }
     @media (max-width: 768px - 0.2) {
-      margin: 0 0 33px 0;
-      
-    }
-    @include sm {
-      margin: 0 auto 38px auto;
-      max-width: 310px;
-      line-height: 1.35em;
+      margin: 0 0 31px 0;
     }
   }
   &__actions {

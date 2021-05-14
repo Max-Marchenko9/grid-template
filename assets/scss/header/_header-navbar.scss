@@ -114,12 +114,12 @@
     }
     @include lg {
       margin: 0 -24px 0 0;
-
     }
     @include md {
       position: absolute;
       top: 100%;
       right: 40px;
+
       display: none;
 
       text-align: right;

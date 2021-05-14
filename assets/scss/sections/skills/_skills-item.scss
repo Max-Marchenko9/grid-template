@@ -3,7 +3,7 @@
   position: relative;
 
   overflow: hidden;
-  
+
 
   &:hover {
     .skill-item__overlay {
@@ -37,18 +37,20 @@
   }
   &__title {
     z-index: 2;
+
     margin: 0;
-    
-    
+
     @include absolute;
     @include md-min {
+      letter-spacing: 0.1em;
+
       font-size: 1.25rem;
       font-weight: bold;
-      letter-spacing: 0.1em;
     }
     @include md {
-      font-size: 1.125rem;
       letter-spacing: 0.1em;
+
+      font-size: 1.125rem;
     }
   }
   &__link {

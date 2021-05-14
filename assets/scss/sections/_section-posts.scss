@@ -1,15 +1,14 @@
 .posts {
-  
   @include lg-min {
     padding-top: 100px;
     padding-bottom: 90px;
   }
   @include lg-md {
-    padding-top: 79px;
+    padding-top: 78px;
     padding-bottom: 80px;
   }
   @include md-sm {
-    padding-top: 59px;
+    padding-top: 57px;
     padding-bottom: 80px;
   }
   @include sm {
@@ -18,7 +17,6 @@
   }
   &__container {
     @extend %container;
-
     @include md {
       padding-right: 22px;
       padding-left: 22px;
@@ -27,34 +25,42 @@
 }
 
 .posts__title {
-  font-family: $font-header;
-  color: #2d3651;
   margin-top: 3px;
+
   letter-spacing: 0.1em;
-  
+
+  color: #2d3651;
+
+  font-family: $font-header;
+
   @include lg-min {
-    font-size: 2.5rem;
     margin-bottom: 56px;
+
+    font-size: 2.5rem;
   }
   @include lg-md {
-    font-size: 2rem;
     margin-bottom: 46px;
+
+    font-size: 2rem;
   }
   @include md {
-    font-size: 1.5rem;
     margin-bottom: 31px;
-  }
-  @include md {
+
     font-size: 1.5rem;
+  }
+  @include sm {
     margin-bottom: 34px;
+
     text-align: center;
+
+    font-size: 1.5rem;
   }
 }
 
 .posts__grid {
   display: grid;
+
   gap: 20px;
-  
   @include lg-min {
     grid-template-areas: "a1 a1 a2 a3" "a4 a5 a6 a6";
     grid-template-columns: repeat(4, 1fr);
@@ -68,105 +74,126 @@
     grid-template-columns: repeat(2, 1fr);
   }
   @include sm {
-    grid-template-areas: "a1" "a2" "a3" "a4" "a5" "a6";
-        grid-template-columns:  1fr;
     max-width: 532px;
+
+    grid-template-areas: "a1" "a2" "a3" "a4" "a5" "a6";
+    grid-template-columns: 1fr;
     // max-height: 350px;
     // margin-left: -2px;
   }
-
 }
 
 
 .post-item {
+  transition: background-color 0.5s;
 
   background-color: #f2f2f2;
-  transition: background-color 0.5s;
- 
-  
+
+
   &:hover {
-    background-color: #d8d8d8;   
+    background-color: #d8d8d8;
   }
 
   &__link {
     display: grid;
-    height: 100%;
-    grid-template-rows: 300px 1fr;
     overflow: hidden;
-    
+
+    height: 100%;
+
+    grid-template-rows: 300px 1fr;
   }
 
   &__image {
-      display: flex;
-      align-content: center;
+    display: flex;
+    overflow: hidden;
+    align-content: center;
     justify-content: center;
+
     background-color: #2d3651;
 
-    overflow: hidden;
-    
 
     img {
       width: 100%;
+
       transition: transform 0.5s;
+
       object-fit: cover;
-      
     }
   }
 
   &__content {
-    padding: 20px;
-    color: #637588;
-    letter-spacing: 0.05em;
-    line-height: 1.25;
-
     display: grid;
     align-content: center;
 
+    padding: 20px;
+
+    letter-spacing: 0.05em;
+
+    color: #637588;
+
+    line-height: 1.25;
+
     h3 {
+      text-align: center;
+
       font-family: "Roboto Slab", serif;
       font-size: 1.125rem;
       font-weight: bold;
-      text-align: center;
-
       // @include lg-min {
-
       // }
+
+      @include lg-min {
+        margin-bottom: 9.5px;
+      }
       @include lg-md {
-        margin-bottom: 11px;
+        margin-bottom: 10px;
+      }
+      @include md-sm {
+        line-height: 1.145em;
       }
     }
     p {
+      margin-top: 6px;
+
+      text-align: center;
+      letter-spacing: 0.005em;
+
       font-family: "Roboto", sans-serif;
       font-size: 1rem;
-      letter-spacing: 0.005em;
-      margin-top: 6px;
-      text-align: center;
 
+      @include lg-min {
+        margin-top: 9.5px;
+      }
       @include lg-md {
         // margin: 10px 0 0 0;
-        margin-top: 11px;
+        margin-top: 10px;
+
+        letter-spacing: 0.001em;
+      }
+      @include md-sm {
+        letter-spacing: 0.0005em;
       }
     }
   }
 }
 .post-item:hover h3 {
-    color: #2d3651;
-  }
-  
-  .post-item:hover p {
-    color: #2d3651;
-  }
+  color: #2d3651;
+}
+
+.post-item:hover p {
+  color: #2d3651;
+}
 .post-item:hover .post-item__image img {
-    transform: scale(1.1);
-  }
+  transform: scale(1.1);
+}
 .post-button {
   display: flex;
   justify-content: center;
+
   margin-top: 20px;
 
   @include sm {
     max-width: 532px;
-    // margin-left: -2px;
   }
 }
 
@@ -197,4 +224,3 @@
 
 
 
-  

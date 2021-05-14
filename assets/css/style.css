@@ -609,7 +609,7 @@ a {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-top: 20px;
+  margin-top: 19px;
 }
 
 .skill-item {
@@ -749,6 +749,10 @@ a {
   margin-top: 0px;
   line-height: 1.2em;
   letter-spacing: 0.1em;
+}
+
+.about-article__text p:not(:last-of-type) {
+  margin-bottom: 20px;
 }
 
 .about-border__item {
@@ -1051,6 +1055,9 @@ a {
     margin-bottom: 50px;
     font-size: 2.5rem;
   }
+  .about-article__text {
+    line-height: 1.325em;
+  }
   .about-border {
     margin-left: 45px;
     margin-right: 39px;
@@ -1077,6 +1084,12 @@ a {
   .posts__grid {
     grid-template-areas: "a1 a1 a2 a3" "a4 a5 a6 a6";
     grid-template-columns: repeat(4, 1fr);
+  }
+  .post-item__content h3 {
+    margin-bottom: 9.5px;
+  }
+  .post-item__content p {
+    margin-top: 9.5px;
   }
 }
 
@@ -1115,29 +1128,31 @@ a {
     margin-bottom: 34px;
     font-size: 2rem;
     line-height: 1.25;
-    letter-spacing: 0.097em;
+    letter-spacing: 0.1em;
   }
   .about-border {
     margin-left: 35px;
     margin-right: 41px;
-    margin-top: 80px;
+    margin-top: -40px;
   }
   .about-item__img {
     max-width: 255px;
     max-height: 459px;
+    margin-top: -1px;
   }
   .about-article p {
     line-height: 1.3;
   }
   .form__container {
     min-height: 100px;
+    gap: 22px;
   }
   .form-item__input,
   .form-item .batton {
     font-size: 1rem;
   }
   .posts {
-    padding-top: 79px;
+    padding-top: 78px;
     padding-bottom: 80px;
   }
   .posts__title {
@@ -1149,10 +1164,11 @@ a {
     grid-template-columns: repeat(3, 1fr);
   }
   .post-item__content h3 {
-    margin-bottom: 11px;
+    margin-bottom: 10px;
   }
   .post-item__content p {
-    margin-top: 11px;
+    margin-top: 10px;
+    letter-spacing: 0.001em;
   }
 }
 
@@ -1185,7 +1201,7 @@ a {
     background-color: rgba(68, 89, 110, 0.8);
   }
   .header-content__title {
-    margin: 0 0 33px 0;
+    margin: 0 0 31px 0;
   }
   .skill-item__title {
     font-size: 1.125rem;
@@ -1198,7 +1214,7 @@ a {
   .about-article__title {
     font-size: 1.5rem;
     line-height: 1.3;
-    margin-bottom: 26px;
+    margin-bottom: 27px;
     letter-spacing: 0.1em;
   }
   .about-article__text {
@@ -1211,8 +1227,7 @@ a {
     margin-left: 20px;
   }
   .form__container {
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding: 20px 22px 22px;
   }
   .posts__container {
     padding-right: 22px;
@@ -1222,29 +1237,31 @@ a {
     font-size: 1.5rem;
     margin-bottom: 31px;
   }
-  .posts__title {
-    font-size: 1.5rem;
-    margin-bottom: 34px;
-    text-align: center;
-  }
 }
 
 @media (max-width: 767.8px) and (min-width: 576px) {
+  .header-menu__container {
+    max-height: 92px;
+  }
   .skills__container {
     gap: 10px;
     grid-template-areas: "a1 a2" "a3 a2" "a4 a4" "a5 a6" "a5 a7" "a8 a9";
   }
+  .skills__actions {
+    margin-left: 10px;
+    padding-bottom: 2px;
+  }
   .about__container {
-    padding: 60px 20px 37px 20px;
+    padding: 58px 20px 37px 20px;
   }
   .about-item__img {
     max-width: 236px;
     max-height: 425px;
-    margin-top: -26px;
+    margin-top: -25px;
     margin-right: 2px;
   }
   .form__container {
-    height: 182px;
+    padding: 20px 22px 22px;
   }
   .form-item:nth-of-type(1) {
     grid-column: 1 / 3;
@@ -1254,12 +1271,18 @@ a {
     font-size: 1.125rem;
   }
   .posts {
-    padding-top: 59px;
+    padding-top: 57px;
     padding-bottom: 80px;
   }
   .posts__grid {
     grid-template-areas: "a1 a2" "a3 a4" "a5 a6";
     grid-template-columns: repeat(2, 1fr);
+  }
+  .post-item__content h3 {
+    line-height: 1.145em;
+  }
+  .post-item__content p {
+    letter-spacing: 0.0005em;
   }
 }
 
@@ -1275,7 +1298,6 @@ a {
   }
   .header-content__title {
     margin: 0 auto 38px auto;
-    max-width: 310px;
     line-height: 1.35em;
   }
   .header-content__actions {
@@ -1313,8 +1335,6 @@ a {
   }
   .about-border {
     margin-right: 39px;
-  }
-  .about-border {
     display: none;
   }
   .about-item {
@@ -1345,12 +1365,14 @@ a {
   .form-item__input {
     padding-left: 19px;
   }
-  .batton {
-    margin-bottom: 2px;
-  }
   .posts {
     padding-top: 56px;
     padding-bottom: 60px;
+  }
+  .posts__title {
+    font-size: 1.5rem;
+    margin-bottom: 34px;
+    text-align: center;
   }
   .posts__grid {
     grid-template-areas: "a1" "a2" "a3" "a4" "a5" "a6";
