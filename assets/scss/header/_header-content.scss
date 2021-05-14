@@ -13,6 +13,12 @@
     }
     @media (max-width: 768px - 0.2) {
       margin: 0 0 33px 0;
+      
+    }
+    @include sm {
+      margin: 0 auto 38px auto;
+      max-width: 310px;
+      line-height: 1.35em;
     }
   }
   &__actions {

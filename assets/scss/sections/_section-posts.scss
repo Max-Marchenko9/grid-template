@@ -12,6 +12,10 @@
     padding-top: 59px;
     padding-bottom: 80px;
   }
+  @include sm {
+    padding-top: 56px;
+    padding-bottom: 60px;
+  }
   &__container {
     @extend %container;
 
@@ -40,6 +44,11 @@
     font-size: 1.5rem;
     margin-bottom: 31px;
   }
+  @include md {
+    font-size: 1.5rem;
+    margin-bottom: 34px;
+    text-align: center;
+  }
 }
 
 .posts__grid {
@@ -61,6 +70,9 @@
   @include sm {
     grid-template-areas: "a1" "a2" "a3" "a4" "a5" "a6";
         grid-template-columns:  1fr;
+    max-width: 532px;
+    // max-height: 350px;
+    // margin-left: -2px;
   }
 
 }
@@ -151,6 +163,11 @@
   display: flex;
   justify-content: center;
   margin-top: 20px;
+
+  @include sm {
+    max-width: 532px;
+    // margin-left: -2px;
+  }
 }
 
 

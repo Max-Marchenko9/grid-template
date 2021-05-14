@@ -20,6 +20,7 @@
     }
     @include sm {
       display: block;
+      padding: 58px 20px 68px 20px;
     }
   }
 }
@@ -44,6 +45,7 @@
   }
   @include sm {
     margin-bottom: 5px;
+    letter-spacing: 0.05em;
   }
 
   &__title {
@@ -72,7 +74,7 @@
     }
     @include sm {
         text-align: center;
-        margin-bottom: 25px;
+        margin-bottom: 27px;
       }
   } 
   &__text {
@@ -121,6 +123,7 @@
   @include sm {
     display: flex;
     justify-content: center;
+    margin-top: 34px;
   }
 
   &__img {
@@ -133,7 +136,7 @@
       max-width: 255px;
     max-height: 459px;
     }
-    @include md {
+    @include md-sm {
       max-width: 236px;
       max-height: 425px;
       margin-top: -26px;
@@ -142,6 +145,7 @@
     @include sm {
       max-width: 271px;
       max-height: 487px;
+      margin: 0 141px 0 164px;
     }
   }
 }

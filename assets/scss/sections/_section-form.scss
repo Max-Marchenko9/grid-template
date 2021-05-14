@@ -20,6 +20,10 @@
       height: 182px;
 
     }
+    @include sm {
+      max-height: 263px;
+      
+    }
     @include md-min {
         align-items: center;
         justify-content: space-between;
@@ -58,9 +62,13 @@
       font-size: 1rem;
 
     }
-    @include md {
+    @include md-sm {
       font-size: 1.125rem;
 
+    }
+    @include sm {
+      font-size: 1.125rem;
+      max-width: 532px;
     }
   }
   &__input {
@@ -73,6 +81,9 @@
     }
     @include lg {
       padding-left: 20px;
+    }
+    @include sm {
+      padding-left: 19px;
     }
 
     &::placeholder {
@@ -95,6 +106,10 @@
   background-color: #424b63;
   border: 2px solid #424b63;
   border-bottom: 2px solid #5e657a;
+
+  @include sm {
+    margin-bottom: 2px;
+  }
 }
 .batton:hover {
   background-color: $color-accent;
