@@ -1,7 +1,7 @@
 .posts {
   @include lg-min {
     padding-top: 100px;
-    padding-bottom: 90px;
+    padding-bottom: 101px;
   }
   @include lg-md {
     padding-top: 78px;
@@ -9,7 +9,7 @@
   }
   @include md-sm {
     padding-top: 57px;
-    padding-bottom: 80px;
+    padding-bottom: 60px;
   }
   @include sm {
     padding-top: 56px;
@@ -221,6 +221,3 @@
 .post-item:nth-of-type(6) {
   grid-area: a6;
 }
-
-
-
