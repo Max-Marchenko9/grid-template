@@ -101,19 +101,25 @@
   }
 
   &__list {
-    margin: 0 -20px 0 0;
+    margin: 0 -$gap 0 0;
     padding: 0;
 
     list-style: none;
 
+    @include lg-min {
+      display: grid;
+      justify-content: end;
+
+      margin: 0;
+    }
+    @include lg {
+      margin: 0 -24px 0 0;
+    }
     @include md-min {
       display: grid;
       justify-content: end;
 
       grid-template-columns: repeat(auto-fit, minmax(50px, max-content));
-    }
-    @include lg {
-      margin: 0 -24px 0 0;
     }
     @include md {
       position: absolute;
@@ -139,6 +145,11 @@
     transition: color 0.5s;
 
     font-size: 1.125rem;
+
+    @include lg-min {
+      margin: 0;
+      padding: 0 0 0 40px;
+    }
     &:hover,
     &:focus {
       color: #d66926;

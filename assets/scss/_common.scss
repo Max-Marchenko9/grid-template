@@ -8,23 +8,23 @@ html {
 
   color: #637588;
 
-  font-family: "Roboto", sans-serif;
+  font-family: $font-main;
   font-size: 16px;
 }
 
 h1 {
   letter-spacing: 0.08em;
 
-  font-family: "Roboto Slab", serif;
+  font-family: $font-header;
   font-weight: 300;
   line-height: 1.2em;
-  @media (min-width: 992px) {
+  @media (min-width: $lg) {
     font-size: 3.75rem;
   }
-  @media (max-width: 992px - 0.2) and (min-width: 768px) {
+  @media (max-width: $lg - 0.2) and (min-width: $md) {
     font-size: 2.5rem;
   }
-  @media (max-width: 768px - 0.2) {
+  @media (max-width: $md - 0.2) {
     font-size: 1.875rem;
   }
 }

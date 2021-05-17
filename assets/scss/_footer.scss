@@ -6,13 +6,19 @@
     flex-direction: column;
 
     height: 250px;
-    padding: 48px 20px 67px;
+    padding: 48px $gap 67px;
 
     text-align: center;
 
     @extend %container;
+    @include lg-min {
+      padding: 48px 20px 67px;
+    }
+    @include lg {
+      height: 251px;
+    }
     @include md {
-      padding-top: 57px;
+      padding-top: 58px;
     }
   }
   &__social {
@@ -24,6 +30,8 @@
     width: 233px;
     height: 48px;
     margin-bottom: 50px;
+
+
     &::after {
       position: absolute;
       bottom: -45%;
@@ -35,8 +43,12 @@
 
       border-bottom: 2px solid #637588;
 
+      @include  lg-min {
+        left: 33.5%;
+      }
       @include md {
         bottom: -89%;
+        left: 34.5%;
       }
     }
   }
@@ -62,7 +74,7 @@
     line-height: 1.29em;
 
     @include md {
-      margin-top: 12px;
+      margin-top: 11px;
     }
 
     span:first-of-type {
@@ -87,5 +99,3 @@
     }
   }
 }
-
-

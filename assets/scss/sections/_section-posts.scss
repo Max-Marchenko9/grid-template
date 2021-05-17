@@ -25,21 +25,21 @@
 }
 
 .posts__title {
-  margin-top: 3px;
+  margin-top: 2px;
 
   letter-spacing: 0.1em;
 
-  color: #2d3651;
+  color: $color-primary;
 
   font-family: $font-header;
 
   @include lg-min {
-    margin-bottom: 56px;
+    margin-bottom: 58px;
 
     font-size: 2.5rem;
   }
   @include lg-md {
-    margin-bottom: 46px;
+    margin-bottom: 45px;
 
     font-size: 2rem;
   }
@@ -60,7 +60,7 @@
 .posts__grid {
   display: grid;
 
-  gap: 20px;
+  gap: $gap;
   @include lg-min {
     grid-template-areas: "a1 a1 a2 a3" "a4 a5 a6 a6";
     grid-template-columns: repeat(4, 1fr);
@@ -109,7 +109,7 @@
     align-content: center;
     justify-content: center;
 
-    background-color: #2d3651;
+    background-color: $color-primary;
 
 
     img {
@@ -125,7 +125,7 @@
     display: grid;
     align-content: center;
 
-    padding: 20px;
+    padding: $gap;
 
     letter-spacing: 0.05em;
 
@@ -136,7 +136,7 @@
     h3 {
       text-align: center;
 
-      font-family: "Roboto Slab", serif;
+      font-family: $font-header;
       font-size: 1.125rem;
       font-weight: bold;
       // @include lg-min {
@@ -144,6 +144,10 @@
 
       @include lg-min {
         margin-bottom: 9.5px;
+
+        letter-spacing: 0.048em;
+
+        line-height: 1.15;
       }
       @include lg-md {
         margin-bottom: 10px;
@@ -158,11 +162,13 @@
       text-align: center;
       letter-spacing: 0.005em;
 
-      font-family: "Roboto", sans-serif;
+      font-family: $font-main;
       font-size: 1rem;
 
       @include lg-min {
         margin-top: 9.5px;
+
+        letter-spacing: 0.00009em;
       }
       @include lg-md {
         // margin: 10px 0 0 0;
@@ -177,11 +183,11 @@
   }
 }
 .post-item:hover h3 {
-  color: #2d3651;
+  color: $color-primary;
 }
 
 .post-item:hover p {
-  color: #2d3651;
+  color: $color-primary;
 }
 .post-item:hover .post-item__image img {
   transform: scale(1.1);
@@ -190,8 +196,11 @@
   display: flex;
   justify-content: center;
 
-  margin-top: 20px;
+  margin-top: $gap;
 
+  @include md-sm {
+    margin-top: $gap - 1px;
+  }
   @include sm {
     max-width: 532px;
   }

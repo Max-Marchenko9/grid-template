@@ -5,7 +5,7 @@
     min-height: 120px;
 
     @extend %container;
-    gap: 20px;
+    gap: $gap;
     grid-auto-rows: auto;
     grid-template-columns: 1fr 1fr;
     // @include lg {
@@ -16,7 +16,7 @@
       gap: 22px;
     }
     @include md-sm {
-      padding: 20px 22px 22px;
+      padding: $gap 22px 22px;
       // padding-bottom: 1px;
       // height: 182px;
     }
@@ -31,7 +31,7 @@
       grid-template-columns: repeat(3, 1fr);
     }
     @include md {
-      padding: 20px 22px 22px;
+      padding: $gap 22px 22px;
     }
     @include sm {
       grid-template-columns: 1fr;
@@ -78,10 +78,15 @@
       padding-left: 31px;
     }
     @include lg {
-      padding-left: 20px;
+      padding-bottom: 4px;
+      padding-left: $gap;
+    }
+    @include md-sm {
+      padding-left: 18px;
     }
     @include sm {
-      padding-left: 19px;
+      padding-bottom: 2px;
+      padding-left: 18px;
     }
 
     &::placeholder {

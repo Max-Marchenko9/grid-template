@@ -32,7 +32,7 @@ $typefaces: (
 $font-size: (
   xxl: 32px,
   xl:  24px,
-  l:   20px,
+  l:   $gap,
   m:   $base-font-size,
   s:   14px,
   xs:  10px,

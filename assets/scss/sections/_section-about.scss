@@ -7,13 +7,13 @@
 
     @extend %container;
     @include lg-min {
-      padding: 100px 20px;
+      padding: 100px $gap;
     }
     @include lg-md {
-      padding: 80px 20px;
+      padding: 80px $gap;
     }
     @include md-sm {
-      padding: 58px 20px 37px 20px;
+      padding: 57px $gap 37px $gap;
     }
     @include sm-min {
       display: flex;
@@ -22,7 +22,7 @@
     @include sm {
       display: block;
 
-      padding: 58px 20px 68px 20px;
+      padding: 58px $gap 68px $gap;
     }
   }
 }
@@ -83,7 +83,7 @@
       letter-spacing: 0.1em;
 
       font-size: 1.5rem;
-      line-height: 1.3;
+      line-height: 1.35;
     }
     @include sm {
       margin-bottom: 27px;
@@ -93,7 +93,7 @@
   }
   &__text {
     @include md {
-      margin-top: -2px;
+      margin-top: -3px;
 
       letter-spacing: 0.09;
     }
@@ -118,9 +118,9 @@
     margin-left: 35px;
   }
   @include md {
-    margin-top: -53px;
+    margin-top: -51px;
     margin-right: 55px;
-    margin-left: 20px;
+    margin-left: $gap;
   }
   @include sm {
     display: none;
@@ -133,7 +133,7 @@
     height: 200px;
     margin-top: 145px;
 
-    background-color: #c5c5c5;
+    background-color: #707070;
   }
 }
 .about-item {
@@ -159,7 +159,7 @@
     @include md-sm {
       max-width: 236px;
       max-height: 425px;
-      margin-top: -25px;
+      margin-top: -24px;
       margin-right: 2px;
     }
     @include sm {
@@ -171,7 +171,7 @@
 }
 
 .about-article p {
-  @media (max-width: 991.8px) and (min-width: 768px) {
+  @media (max-width: 991.8px) and (min-width: $md) {
     line-height: 1.3;
   }
 }

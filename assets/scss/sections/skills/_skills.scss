@@ -4,7 +4,7 @@
     padding: 10px;
   }
   @include sm {
-    padding: 20px 22px;
+    padding: $gap 22px;
     // margin-bottom: 0px;
   }
   &__container {
@@ -25,11 +25,11 @@
     @include sm {
       max-width: 532px;
 
-      gap: 20px;
+      gap: $gap;
       grid-template-areas: "a1" "a2" "a3" "a4" "a5" "a6" "a7" "a8" "a9";
     }
     @media (min-height: 691px) {
-      grid-auto-rows: calc(33.33333vh - 20px * 0.66666);
+      grid-auto-rows: calc(33.33333vh - 40px / 3);
     }
     @media (max-height: 690px) {
       grid-auto-rows: 200px;
