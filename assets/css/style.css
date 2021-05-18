@@ -755,7 +755,7 @@ a {
   width: 1px;
   height: 200px;
   margin-top: 145px;
-  background-color: #e5e5e5;
+  background-color: #C5C5C5;
 }
 
 .about-item {
@@ -949,8 +949,8 @@ a {
 }
 
 .post-button__link {
-  padding-left: 3px;
   padding-bottom: 2px;
+  padding-left: 3px;
 }
 
 .post-item:nth-of-type(1) {
@@ -1465,8 +1465,8 @@ a {
   }
   .about-article__title {
     margin-bottom: 27px;
-    letter-spacing: 0.094em;
     text-align: center;
+    letter-spacing: 0.094em;
   }
   .about-border {
     display: none;
