@@ -7,7 +7,7 @@
 
     height: 250px;
     padding: 48px $gap 67px;
-
+    
     text-align: center;
 
     @extend %container;
@@ -18,12 +18,11 @@
       height: 251px;
     }
     @include md {
-      padding-top: 58px;
+      padding-top: 57px;
     }
   }
   &__social {
     position: relative;
-
     display: flex;
     justify-content: space-between;
 
@@ -36,19 +35,24 @@
       position: absolute;
       bottom: -45%;
       left: 33%;
-
       width: 75px;
-
       content: "";
-
       border-bottom: 2px solid #637588;
 
       @include  lg-min {
         left: 33.5%;
       }
-      @include md {
-        bottom: -89%;
+      @include lg-md {
+        bottom: -39%;
+        left: 34%;
+      }
+      @include md-sm {
+        bottom: -87%;
         left: 34.5%;
+      }
+      @include sm {
+        bottom: -87%;
+        left: 34%;
       }
     }
   }
@@ -67,14 +71,19 @@
   }
   &__copyright {
     margin-bottom: -1px;
-
     text-transform: uppercase;
 
     font-size: 1rem;
     line-height: 1.29em;
 
-    @include md {
+    @include lg-md {
+      margin-top: -1.5px;
+    }
+    @include md-sm {
       margin-top: 11px;
+    }
+    @include sm {
+      margin-top: 12px;
     }
 
     span:first-of-type {

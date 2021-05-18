@@ -8,7 +8,7 @@
     padding-bottom: 80px;
   }
   @include md-sm {
-    padding-top: 57px;
+    padding-top: 58px;
     padding-bottom: 60px;
   }
   @include sm {
@@ -44,12 +44,12 @@
     font-size: 2rem;
   }
   @include md {
-    margin-bottom: 31px;
+    margin-bottom: 30px;
 
     font-size: 1.5rem;
   }
   @include sm {
-    margin-bottom: 34px;
+    margin-bottom: 35px;
 
     text-align: center;
 
@@ -179,6 +179,9 @@
       @include md-sm {
         letter-spacing: 0.0005em;
       }
+      @include sm {
+        letter-spacing: 0.000005em;
+      }
     }
   }
 }
@@ -195,8 +198,13 @@
 .post-button {
   display: flex;
   justify-content: center;
-
   margin-top: $gap;
+
+  &__link {
+    padding-left: 3px;
+    padding-bottom: 2px;
+    // overflow: hidden;
+  }
 
   @include md-sm {
     margin-top: $gap - 1px;

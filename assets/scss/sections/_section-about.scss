@@ -1,7 +1,13 @@
 .about {
   letter-spacing: 0.055em;
-
+  @include md-sm {
+    letter-spacing: 0.053em;
+  }
   line-height: 1.3;
+  
+  @include lg-min {
+    letter-spacing: 0.056em;
+  }
   &__container {
     min-height: 652px;
 
@@ -22,7 +28,7 @@
     @include sm {
       display: block;
 
-      padding: 58px $gap 68px $gap;
+      padding: 56.5px 22px 68px 22px;
     }
   }
 }
@@ -87,21 +93,28 @@
     }
     @include sm {
       margin-bottom: 27px;
+      letter-spacing: 0.094em;
 
       text-align: center;
     }
   }
   &__text {
+    @include md-min {
+      line-height: 1.34em;
+    }
     @include md {
       margin-top: -3px;
 
-      letter-spacing: 0.09;
-    }
-    @include lg-min {
-      line-height: 1.325em;
+      letter-spacing: 0.055;
     }
     p:not(:last-of-type) {
-      margin-bottom: 16px;
+      
+      @include md-min {
+        margin-bottom: -2px;     
+       }
+       @include md {
+        margin-bottom: 16px;
+       }
     }
   }
 }
@@ -109,8 +122,8 @@
 
 .about-border {
   @include lg-min {
-    margin-right: 39px;
-    margin-left: 45px;
+    margin-right: 40px;
+    margin-left: 47px;
   }
   @include lg-md {
     margin-top: -40px;
@@ -165,13 +178,13 @@
     @include sm {
       max-width: 271px;
       max-height: 487px;
-      margin: 0 141px 0 164px;
+      margin: 0 140px 0 165px;
     }
   }
 }
 
-.about-article p {
-  @media (max-width: 991.8px) and (min-width: $md) {
-    line-height: 1.3;
-  }
-}
+// .about-article p {
+//   @include md {
+//     line-height: 1.3;
+//   }
+// }
