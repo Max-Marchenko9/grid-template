@@ -139,8 +139,6 @@
       font-family: $font-header;
       font-size: 1.125rem;
       font-weight: bold;
-      // @include lg-min {
-      // }
 
       @include lg-min {
         margin-bottom: 9.5px;
@@ -198,19 +196,20 @@
 .post-button {
   display: flex;
   justify-content: center;
-  margin-top: $gap;
 
-  &__link {
-    padding-left: 3px;
-    padding-bottom: 2px;
-    // overflow: hidden;
-  }
+  margin-top: $gap;
 
   @include md-sm {
     margin-top: $gap - 1px;
   }
   @include sm {
     max-width: 532px;
+  }
+
+  &__link {
+    padding-bottom: 2px;
+    padding-left: 3px;
+    // overflow: hidden;
   }
 }
 
