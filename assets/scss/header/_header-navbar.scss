@@ -113,7 +113,8 @@
       margin: 0;
     }
     @include lg {
-      margin: 0 -24px 0 0;
+      margin-top: 0;
+      margin-bottom: 3px;
     }
     @include md-min {
       display: grid;
@@ -131,6 +132,18 @@
       text-align: right;
 
       background-color: rgba(#44596e, 0.8);
+    }
+
+    :last-of-type {
+      @include lg {
+        margin-right: 0;
+        padding-right: 0;
+      }
+    }
+    :not(:last-of-type) {
+      @include lg {
+        margin-right: 19px;
+      }
     }
     &.open {
       display: block;

@@ -34,8 +34,7 @@
   }
 }
 .about-article {
-  position: realtive;
-
+  // position: realtive;
   max-width: 936px;
 
   color: $color-gray;
@@ -106,7 +105,7 @@
     @include md {
       margin-top: -3px;
 
-      letter-spacing: 0.055;
+      letter-spacing: 0.0505em;
     }
     p:not(:last-of-type) {
       @include md-min {
@@ -146,7 +145,7 @@
     height: 200px;
     margin-top: 145px;
 
-    background-color: #C5C5C5;
+    background-color: #c5c5c5;
   }
 }
 .about-item {

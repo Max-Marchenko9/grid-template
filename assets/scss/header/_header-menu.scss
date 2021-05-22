@@ -14,8 +14,11 @@
 
     @extend %container;
     grid-template-columns: auto 1fr;
-    @include md-sm {
-      max-height: 92px;
+    @include lg-md {
+      padding-right: 18px;
+    }
+    @include md {
+      height: 92px;
     }
   }
 }

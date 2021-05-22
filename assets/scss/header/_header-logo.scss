@@ -1,5 +1,5 @@
 .header-logo {
-  letter-spacing: 0.22em;
+  letter-spacing: 0.23em;
 
   font-size: 1.5rem;
   &__link {
@@ -10,9 +10,16 @@
   &__text {
     display: inline-block;
 
-    margin-right: 4px;
-    padding: 14px 1px 13px 5px;
+    margin-right: 5px;
+    padding: 12px 0 14px 4px;
 
     border: 3px solid rgb(213, 61, 39);
+
+    @include lg-min {
+      margin-right: 4px;
+    }
+    @include sm {
+      margin-right: 6px;
+    }
   }
 }

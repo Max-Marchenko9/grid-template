@@ -12,7 +12,7 @@
 
     @extend %container;
     @include lg-min {
-      padding: 48px 20px 67px;
+      padding: 47px 20px 67px;
     }
     @include lg {
       height: 251px;
@@ -44,6 +44,7 @@
       border-bottom: 2px solid #637588;
 
       @include  lg-min {
+        bottom: -39%;
         left: 33.5%;
       }
       @include lg-md {
@@ -77,6 +78,9 @@
     font-size: 1rem;
     line-height: 1.29em;
 
+    @include lg-min {
+      margin-top: -2px;
+    }
     @include lg-md {
       margin-top: -1.5px;
     }
@@ -102,10 +106,6 @@
       color: $color-light;
 
       font-weight: bold;
-
-      @include md {
-        padding-top: -1px;
-      }
     }
   }
 }

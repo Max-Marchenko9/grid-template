@@ -10,6 +10,7 @@
     grid-template-columns: 1fr 1fr;
     @include lg-md {
       min-height: 100px;
+      padding: 19px 20px 21px;
 
       gap: 22px;
     }
@@ -66,9 +67,12 @@
     }
   }
   &__input {
-    border: 2px solid #38405a;
-    border-bottom: 2px solid #4a5269;
-    background-color: #38405a;
+    transition: background-color 0.5s, border-color 0.5s;
+
+    border: 2px solid rgba(255, 255,255, 0);
+    border-bottom: 2px solid rgba(255, 255,255, 0.15);
+    background-color: rgba(255, 255,255, 0.05);
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.16);
 
     @include lg-min {
       padding-left: 31px;
@@ -86,16 +90,20 @@
     }
 
     &::placeholder {
-      color: #aea19d;
+      color: rgba(255, 255,255, 0.51);
     }
-
+    &:focus-visible {
+      border-bottom: 2px solid #ffffff;
+      outline: rgba(255, 255,255, 0.1);
+    }
     &:active,
     &:hover {
-      border: 2px solid #5e657a;
+      border: 2px solid rgba(255, 255,255, 0.1);
       border-bottom: 2px solid #ffffff;
-      background-color: #4c546b;
+      background-color: rgba(255, 255, 255, 0.15);
+      text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.16);
       &::placeholder {
-        color: #ffffff;
+        color: rgba(255, 255,255, 1.0);
       }
     }
   }
@@ -103,9 +111,9 @@
 .batton {
   cursor: pointer;
 
-  border: 2px solid #424b63;
-  border-bottom: 2px solid #5e657a;
-  background-color: #424b63;
+  border: 2px solid rgba(255, 255, 255, 0);
+  border-bottom: 2px solid rgba(255, 255, 255, 0.25);
+  background-color: rgba(255, 255, 255, 0.1);
 }
 .batton:hover {
   border: 2px solid $color-light;
